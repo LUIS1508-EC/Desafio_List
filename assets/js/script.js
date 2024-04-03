@@ -1,4 +1,4 @@
-// Asignar id aleatorio
+// Id aleatorio
 const aleatorio = () => Math.random().toString(16).slice(10)
 
 // Arreglo de tareas inicales
@@ -8,13 +8,13 @@ let tareas = [
     { id: aleatorio(), description: "Lavar la ropa", isCompleted: false }
 ]
 
-// Inicializar variables de elementos en DOM
+// Se Inicializan variables de elementos en DOM
 const taresingresadas = document.querySelector("#tareas-ingresadas");
 const description = document.querySelector("#descripciones");
 const tareastotales = document.querySelector("#tareas-totales");
 const tareascompletas = document.querySelector("#tareas-completas");
 
-// Cambiar estado de tarea
+// Se Cambian estados de las tareas
 const completas = (id) => {
     const tareas_seleccionedas = tareas.findIndex(tarea => tarea.id === id);
     tareas[tareas_seleccionedas].secompleta = !tareas[tareas_seleccionedas].secompleta
@@ -22,7 +22,7 @@ const completas = (id) => {
     calculatotal();
 }
 
-// Agregar una tarea
+// Aca es para agregar las tareas
 const agrega_tarea = () => {
     tareas.push({
         id: aleatorio(),
