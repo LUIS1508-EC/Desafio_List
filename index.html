@@ -8,6 +8,39 @@
     <title>TODO LIST</title>
 </head>
 <body>
+    <div class="container">
+        <h1>Todo List</h1>
+        <hr>
+        <p>Nueva Tarea</p>
+        <div class="contenedor2">
+            <input id="descripciones" type="text" />
+            <button onclick="agrega_tarea()">Agregar</button>
+</div>
+<div class="container__display">
+    <div>
+        <p>Total: <span id="tareas-totales">0</span></p>
+        <br>
+        <br>
+        <p>Completadas: <span id="tareas-completas">0</span></p>
+    </div>
+    <div>
+        <table>
+            <caption></caption>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Tarea</th>
+                    <th class="TEST">OK</th>
+                    <th>DEL</th>
+                </tr>
+            </thead>
+            <tbody class="form" id="tareas-ingresadas">
+            </tbody>
+        </table>
+    </div>
+</div>
+
+    </div>
     
 
 
